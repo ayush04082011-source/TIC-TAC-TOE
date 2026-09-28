@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #0f2027,
+        #203a43,
+        #2c5364
+    );
+
+    color: white;
+}
+
+
+
+.h1 {
+    font-size: 45px;
+    margin-top: 2%;
+
+    text-align: center;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.contain {
+    width: 90%;
+    max-width: 500px;
+
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 25px;
+
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.35);
+
+    text-align: center;
+}
+
+
+
+#cityInput {
+    width: 65%;
+
+    padding: 14px 18px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 30px;
+
+    font-size: 20px;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    color: #222;
+
+    transition: 0.3s;
+}
+
+
+#cityInput:focus {
+    box-shadow:
+        0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+
+#cityInput::placeholder {
+    color: #777;
+}
+
+
+
+#searchBtn {
+    padding: 14px 20px;
+
+    margin-left: 5px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #ffffff;
+
+    color: #203a43;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+#searchBtn:hover {
+    transform: translateY(-2px);
+
+    background: #dff6ff;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+#searchBtn:active {
+    transform: scale(0.95);
+}
+
+
+
+#cityName {
+    margin-top: 30px;
+    margin-bottom: 25px;
+
+    font-size: 32px;
+
+    text-transform: capitalize;
+
+    text-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.contain p {
+    margin: 12px 0;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    font-size: 17px;
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+
+.contain p:hover {
+    transform: translateX(5px);
+
+    background: rgba(255, 255, 255, 0.18);
+}
+
+
+
+.contain p span {
+    float: right;
+
+    font-weight: bold;
+
+    color: #ffffff;
+}
+
+#temperature {
+    font-size: 20px;
+}
+
+
+
+#humidity {
+    font-size: 20px;
+}
+
+
+
+#windSpeed {
+    font-size: 20px;
+}
+
+
+
+#weatherCondition {
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .h1 {
+        font-size: 35px;
+    }
+
+    .contain {
+        width: 92%;
+        padding: 25px;
+    }
+
+    #cityInput {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    #searchBtn {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #cityName {
+        font-size: 27px;
+    }
+
+    .contain p {
+        font-size: 15px;
+    }
+}
+
+
+
+@media (max-width: 350px) {
+
+    .h1 {
+        font-size: 30px;
+    }
+
+    .contain {
+        padding: 20px;
+    }
+
+    #cityName {
+        font-size: 24px;
+    }
+}
+
+
